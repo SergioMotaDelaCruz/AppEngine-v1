@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+    <head>
+        <title>App Engine Dashboard</title>
+        <meta http-equiv="refresh" content="10">
+        <link rel="stylesheet" href="static/style.css" type="text/css" />
+
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript">
+          google.charts.load('current', {'packages':['bar']});
+          google.charts.setOnLoadCallback(drawChart);
+
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+              ['Versión', 'Vistas', 'Likes'],
+              ['V1', {{ v[2] }}, {{ v[3] }}],
+              ['V2', {{ v[4] }}, {{ v[5] }}]
+            ]);
+
+            var options = {
+              chart: {
+                title: 'A/B Testing',
+              }
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('chart_div'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+          }
+        </script>
+    </head>
+
+    <body color="grey">
+        <div class="div-img-left">
+	    </div>
+        <div class="div-label-left">
+            <h2> {{ v[0] }} Like Ratio </h2>
+        </div>
+        
+        <div class="div-img-right">
+	    </div>
+        <div class="div-label-right">
+            <h2> {{ v[1] }} Like Ratio </h2>
+        </div>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <div id="chart_div" class="div-img"></div>
+
+    </body>
+</html>
+
+
+

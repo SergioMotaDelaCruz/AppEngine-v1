@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Fira+Sans+Extra+Condensed:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+html,body{
+height:100%;
+overflow:hidden;
+}
+h2{
+font-size:2.75em;
+}
+
+.bottom { 
+position: absolute; 
+right: 10px; 
+bottom: 5px; 
+}
+.caja-boton { 
+position: absolute; 
+left: 20px; 
+top: 20px; 
+}
+
+.button { 
+border-radius: 60%; 
+font-size: 40px; 
+margin: 4px 4px; 
+padding: 12px 12px;
+font-family: 'Bangers', cursive; 
+border: 2px solid white; 
+color: white; 
+box-shadow: 1px 12px blue;
+background-color: red; 
+}
+
+.button:hover { 
+background-color: rgba(255,0,0,0.6); 
+}
+
+.button:active { 
+transform: translateY(3px);
+box-shadow: 0 4px red;
+}
+
+.div-bg {
+background: rgba(255,255,255,0.6);
+color: black;
+width: 10%;
+}
+
+.div-img {
+background-size: cover;
+height: 40%;
+width: 30%;
+position: absolute;
+left: 35%;
+bottom:5%;
+}
+
+.div-label{
+background: rgba(255,255,255,0.6);
+color: black;
+position: absolute;
+left: 35%;
+bottom:5%;
+padding: 2px;
+font-family: 'Lato', sans-serif;
+}
+
+.div-img-left {
+background-image: url(bg-img-v1.jpg) ; 
+background-size: cover;
+height: 40%;
+width: 30%;
+position: absolute;
+left: 5%;
+top: 5%;
+}
+
+.div-label-left{
+background: rgba(255,255,255,0.6);
+color: black;
+position: absolute;
+left: 5%;
+top: 5%;
+padding: 2px;
+font-family: 'Lato', sans-serif;
+font-size:1.1em;
+width: 30%;
+}
+
+.div-img-right {
+background-image: url(bg-img-v2.jpg); 
+background-size: cover;
+height: 40%;
+width: 30%;
+position: absolute;
+right: 5%;
+top: 5%;
+}
+
+.div-label-right{
+background: rgba(255,255,255,0.6);
+color: black;
+position: absolute;
+right: 5%;
+top: 5%;
+padding: 2px;
+font-family: 'Lato', sans-serif;
+font-size:1.1em;
+width: 30%;
+}
+
